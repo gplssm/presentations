@@ -1,0 +1,53 @@
+\usepackage{tikz}
+
+%%% define colors
+\definecolor{darkegoblue}{HTML}{1f567d}
+\definecolor{lightegoblue}{HTML}{7ca7c6}
+\definecolor{paleegoblue}{HTML}{cee3f1}
+
+\setbeamercolor{headego}{fg=white, bg=darkegoblue}
+\setbeamercolor{footego}{fg=white, bg=lightegoblue}
+
+
+%%% title 
+\setbeamercolor{title}{fg=white, bg=darkegoblue}
+\titlegraphic{\hfill %oder \includegraphics[width=2cm]{eGon_logo.pdf}\hspace*{4.75cm}~% für 2. Logo
+   \includegraphics[width=2cm]{eGon_logo.pdf}
+}
+
+%%% frametitle 
+\setbeamercolor{frametitle}{fg=white, bg=darkegoblue}
+\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\clip (0.97\textwidth,0.6) circle (.75cm);
+		\node at (0.97\textwidth,0.6) {\includegraphics[width=1.6cm]{eGon_logo.pdf}};
+	\end{tikzpicture}}
+
+%%% footline
+\setbeamertemplate{footline}{
+	\begin{beamercolorbox}[wd=\textwidth, ht = 2mm, dp=1mm]{footego}
+		\hspace*{2mm}\insertauthor\hfill\inserttitle\hfill\insertdate\hfill\insertframenumber\hspace*{2mm}
+	\end{beamercolorbox}
+	}
+
+%%% frame content 	
+\setbeamercolor{item}{fg=darkegoblue}
+\setbeamertemplate{itemize items}[circle]
+
+\setbeamercolor{block title}{bg=lightegoblue, fg=black}
+\setbeamercolor{block body}{bg=paleegoblue, fg=black}
+
+
+%%% table of contents
+\setbeamertemplate{section in toc}[circle]
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{subsection in toc}{fg=black}
+\setbeamercolor{subsubsection in toc}{fg=black}
+
+
+%%% bibliography
+\setbeamertemplate{section in toc}[circle]
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamertemplate{bibliography item}[text]
