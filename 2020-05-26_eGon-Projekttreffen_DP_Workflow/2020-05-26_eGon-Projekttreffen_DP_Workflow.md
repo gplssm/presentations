@@ -29,8 +29,7 @@ theme: egon
 
 - Versionierung erfolgt je Datensatz (Tabelle) mit eigenständiger Versionsnummer 
 - Versionsnummer in einer Spalte der Tabelle -> mehere Versionen in einer Tabelle möglich
-- Abhängigkeit zwischen Datensätzen (und dem zugehörigen Skript, was sie verknüpft) muss bekannt sein. Optionen
-  - YAML, JSON, Python `dict()`
+- Abhängigkeit zwischen Datensätzen (und dem zugehörigen Skript, was sie verknüpft) muss bekannt sein. Optionen: YAML, JSON, Python `dict()`
   
 ![](img/Version_management_script-centric.pdf){ width=85% }
 
@@ -40,7 +39,7 @@ theme: egon
 ::: {.column  width=50%} 
 
 - Abbildung der Abhängigkeiten und der Versionen mittels Graph (bipartit oder DAG)
-- Verwaltung des Graphen je nach Workflow Management Tool
+- Verwaltung des Graphen je nach Workflow Management Tool (Snakemake oder Apache Airflow)
 :::
 
 ::: {.column  width=50%}
@@ -48,17 +47,23 @@ theme: egon
 :::
 ::::::
 
+# {.plain }
+
+\center
+\LARGE Für die Kleingruppe
+
 # Fragen zu Versionierung & Workflow Management
 
-- Wie gehen wir mit Veränderungen der Tabellenstruktur (z.B. Spalte hinzufügen/umbenennen) um? Kann das im Rahmen einer neuen Version erfolgen?
+- Wie gehen wir mit Veränderungen der Tabellenstruktur (z.B. Spalte hinzufügen/umbenennen) um? Kann das im Rahmen einer neuen Version erfolgen? Ab welchem Maß an Veränderung sollte ein neuer Datensatz erstellt werden?
 - Können Bereiche gültiger Versionen definiert werden à la `>=0.3.2 <0.5.0`?
-- Datenaustausch der Entwicklungsversion zwischen Projektpartner:innen (SQL Dumps, Schema _model_draft_, separater DB Server)?
+- DAG besser geeignet als bipartiter Graph?
 
 
 # Spezifische Anforderungen DP development
 
 - Datenaustausch von development Daten zwischen Projektpartnen (z.B. über Schema _model_draft_)
 - Import von benötigten Daten zu Pipelineschritt X (z.B. SQL-Dump oder Funktion, die Abhängigkeiten auflöst)
+- Partielle Ausführung des DP
 
 # Spezifisches zur Pre-processing pipeline
 
@@ -68,6 +73,12 @@ Einige, der im pre-processing erstellten Tabellen, existieren bereits. Es muss b
 - Ersetzen einer Tabelle würde ggf. andere Menschen beeinflussen
 - Änderungen der Tabellenstruktur (z.B. andere Spalten) bricht Workflows anderer Menschen (die wir nicht kennen)
 
+# OEP Schnittstelle
+
+Optionen
+
+- ORM-Klassendefinitionen versioniert in ego.io
+- SAIO & OEM2ORM
 
 # Benötigte Tools (helper functions)
 
@@ -76,3 +87,4 @@ Einige, der im pre-processing erstellten Tabellen, existieren bereits. Es muss b
 - Suche von Datensatz in versionierten Schemata, _model_draft_, in lokaler DB
 - Metadaten.json Ersteller
 - OEM2ORM
+- Testdatensatz
