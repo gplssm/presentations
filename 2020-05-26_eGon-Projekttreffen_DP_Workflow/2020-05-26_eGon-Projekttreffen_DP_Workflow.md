@@ -10,14 +10,14 @@ date: 26.05.2020
 theme: egon
 ---
 
-# Prämissen & Andorderungen
+# Prämissen & Anforderungen
 
 - Versionierung in der OEDB ist für Administration, nicht zum Produktiveinsatz gedacht
 - Berechnungen des Data processings (DP) kann nicht auf OEP ausgeführt werden, lediglich zur Datenverwaltung
 - Kommunikation mit der OEP nur über `oedialect`. Empfohlen: SQLAlchemy ORMs
 - DP soll automatisiert reproduzierbar sein
 - Einsatz von Open Source Tools
-- Data processing ist auf beliegem Rechner ausführbar
+- Data processing ist auf beliebigem Rechner ausführbar
 
 # Data processing pipeline (production)
 
@@ -28,7 +28,7 @@ theme: egon
 # Versionierung & Workflow Management
 
 - Versionierung erfolgt je Datensatz (Tabelle) mit eigenständiger Versionsnummer 
-- Versionsnummer in einer Spalte der Tabelle -> mehere Versionen in einer Tabelle möglich
+- Versionsnummer in einer Spalte der Tabelle -> mehrere Versionen in einer Tabelle möglich
 - Abhängigkeit zwischen Datensätzen (und dem zugehörigen Skript, was sie verknüpft) muss bekannt sein. Optionen: YAML, JSON, Python `dict()`
   
 ![](img/Version_management_script-centric.pdf){ width=85% }
@@ -61,7 +61,7 @@ theme: egon
 
 # Spezifische Anforderungen DP development
 
-- Datenaustausch von development Daten zwischen Projektpartnen (z.B. über Schema _model_draft_)
+- Datenaustausch von development Daten zwischen Projektpartnern (z.B. über Schema _model_draft_)
 - Import von benötigten Daten zu Pipelineschritt X (z.B. SQL-Dump oder Funktion, die Abhängigkeiten auflöst)
 - Partielle Ausführung des DP
 
