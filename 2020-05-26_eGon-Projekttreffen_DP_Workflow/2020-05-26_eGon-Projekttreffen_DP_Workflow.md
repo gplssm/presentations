@@ -14,7 +14,8 @@ theme: egon
 
 - Versionierung in der OEDB ist für Administration, nicht zum Produktiveinsatz gedacht
 - Berechnungen des Data Processings (DP) kann nicht auf OEP ausgeführt werden, lediglich zur Datenverwaltung
-- Kommunikation mit der OEP nur über `oedialect`. Empfohlen: SQLAlchemy ORMs
+- Kommunikation mit der OEP nur über `oedialect`.  
+  Empfohlen: SQLAlchemy ORM Klassendefinitionen
 - DP soll automatisiert reproduzierbar sein
 - Einsatz von Open Source Tools
 - DP ist auf beliebigem Rechner ausführbar
