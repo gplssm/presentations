@@ -84,7 +84,7 @@ Optionen
 # Benötigte Tools (helper functions)
 
 - Import von Tabelle in lokale DB
-- Constraints, Indizes, Metadaten (Comment), die in lokaler Datenbank erstellt werden, in OEP übernehmen
+- Constraints, Indizes, Metadaten (Kommentare), die in lokaler Datenbank erstellt werden, in OEP übernehmen
 - Suche von Datensatz in versionierten Schemata, _model_draft_, in lokaler DB
 - Metadaten.json Ersteller
 - OEM2ORM
