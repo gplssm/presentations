@@ -17,7 +17,7 @@ theme: egon
 - Kommunikation mit der OEP nur über `oedialect`. Empfohlen: SQLAlchemy ORMs
 - DP soll automatisiert reproduzierbar sein
 - Einsatz von Open Source Tools
-- Data processing ist auf beliebigem Rechner ausführbar
+- DP ist auf beliebigem Rechner ausführbar
 
 # Data Processing Pipeline (Production)
 
