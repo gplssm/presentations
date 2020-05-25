@@ -28,7 +28,7 @@ theme: egon
 
 # Versionierung & Workflow Management
 
-- Versionierung erfolgt je Datensatz (Tabelle) mit eigenständiger Versionsnummer 
+- Versionierung erfolgt je Datensatz (Tabelle) mit eigenständiger Versionsnummer
 - Versionsnummer in einer Spalte der Tabelle -> mehrere Versionen in einer Tabelle möglich
 - Abhängigkeit zwischen Datensätzen (und dem Skript, dass sie verknüpft) muss bekannt sein. Optionen: YAML, JSON, Python `dict()`
 
@@ -37,7 +37,7 @@ theme: egon
 # Versionierung & Workflow Management
 
 :::::: {.columns}
-::: {.column  width=50%} 
+::: {.column  width=50%}
 
 - Abbildung der Abhängigkeiten und der Versionen mittels Graph (bipartit und/oder DAG)
 - Verwaltung des Graphen je nach Workflow Management Tool (Snakemake oder Apache Airflow)
