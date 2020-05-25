@@ -68,7 +68,7 @@ theme: egon
 
 # Spezifisches zur Preprocessing Pipeline
 
-Einige, der im pre-processing erstellten Tabellen, existieren bereits. Es muss beachtet werden
+Einige, der im Preprocessing erstellten Tabellen, existieren bereits. Es muss beachtet werden
 
 - nicht alle Daten müssen neu geschrieben werden
 - Ersetzen einer Tabelle würde ggf. andere Menschen beeinflussen
