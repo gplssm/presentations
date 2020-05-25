@@ -39,7 +39,7 @@ theme: egon
 :::::: {.columns}
 ::: {.column  width=50%} 
 
-- Abbildung der Abhängigkeiten und der Versionen mittels Graph (bipartit oder DAG)
+- Abbildung der Abhängigkeiten und der Versionen mittels Graph (bipartit und/oder DAG)
 - Verwaltung des Graphen je nach Workflow Management Tool (Snakemake oder Apache Airflow)
 :::
 
@@ -57,7 +57,7 @@ theme: egon
 
 - Wie gehen wir mit Veränderungen der Tabellenstruktur (z.B. Spalte hinzufügen/umbenennen) um? Kann das im Rahmen einer neuen Version erfolgen? Ab welchem Maß an Veränderung sollte ein neuer Datensatz erstellt werden?
 - Können Bereiche gültiger Versionen definiert werden à la `>=0.3.2 <0.5.0`?
-- DAG besser geeignet als bipartiter Graph?
+- DAG / bipartiter Graph?
 
 
 # Spezifische Anforderungen DP Development
