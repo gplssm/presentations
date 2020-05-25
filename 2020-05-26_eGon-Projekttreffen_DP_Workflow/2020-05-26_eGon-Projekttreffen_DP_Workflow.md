@@ -19,7 +19,7 @@ theme: egon
 - Einsatz von Open Source Tools
 - Data processing ist auf beliebigem Rechner ausführbar
 
-# Data processing pipeline (production)
+# Data Processing Pipeline (Production)
 
 \center
 ![](img/DP_Workflow.pdf){ width=68% }
@@ -59,13 +59,13 @@ theme: egon
 - DAG besser geeignet als bipartiter Graph?
 
 
-# Spezifische Anforderungen DP development
+# Spezifische Anforderungen DP Development
 
 - Datenaustausch von development Daten zwischen Projektpartnern (z.B. über Schema _model_draft_)
 - Import von benötigten Daten zu Pipelineschritt X (z.B. SQL-Dump oder Funktion, die Abhängigkeiten auflöst)
 - Partielle Ausführung des DP
 
-# Spezifisches zur Pre-processing pipeline
+# Spezifisches zur Preprocessing Pipeline
 
 Einige, der im pre-processing erstellten Tabellen, existieren bereits. Es muss beachtet werden
 
