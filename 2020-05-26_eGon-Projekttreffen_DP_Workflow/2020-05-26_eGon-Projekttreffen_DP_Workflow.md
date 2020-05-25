@@ -30,8 +30,8 @@ theme: egon
 
 - Versionierung erfolgt je Datensatz (Tabelle) mit eigenständiger Versionsnummer 
 - Versionsnummer in einer Spalte der Tabelle -> mehrere Versionen in einer Tabelle möglich
-- Abhängigkeit zwischen Datensätzen (und dem zugehörigen Skript, was sie verknüpft) muss bekannt sein. Optionen: YAML, JSON, Python `dict()`
-  
+- Abhängigkeit zwischen Datensätzen (und dem Skript, dass sie verknüpft) muss bekannt sein. Optionen: YAML, JSON, Python `dict()`
+
 ![](img/Version_management_script-centric.pdf){ width=85% }
 
 # Versionierung & Workflow Management
