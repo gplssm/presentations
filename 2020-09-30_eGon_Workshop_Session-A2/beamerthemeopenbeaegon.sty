@@ -1,0 +1,68 @@
+\usepackage{tikz}
+
+%%% define colors
+\definecolor{darkegoblue}{HTML}{1f567d}
+\definecolor{lightegoblue}{HTML}{7ca7c6}
+\definecolor{paleegoblue}{HTML}{cee3f1}
+
+
+\setbeamercolor{footego}{fg=white, bg=darkegoblue}
+
+
+%%% title 
+\setbeamercolor{title}{fg=white, bg=darkegoblue}
+\titlegraphic{
+	\includegraphics[width=2cm]{img/openBEA_logo.jpg}\hspace*{4.75cm}~% für 2. Logo
+   \includegraphics[width=2cm]{img/eGon_logo.pdf}
+}
+
+%%% frametitle 
+
+\setbeamertemplate{frametitle}{%
+	\vspace*{0.5cm}    
+    \usebeamerfont{frametitle}\textbf{\insertframetitle}%
+    \vphantom{g}% To avoid fluctuations per frame
+    \hrule% Uncomment to see desired effect, without a full-width hrule
+    %\par\hspace*{-\dimexpr0.75\paperwidth-0.5\textwidth}\rule[-0.1\baselineskip]{\paperwidth}{0.8pt}
+    \par\vspace*{-\baselineskip}% <-- reduce vertical space after rule
+}
+\setbeamercolor{frametitle}{fg=darkegoblue, bg=white}
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\node at (0.99\textwidth,-0.2) {\includegraphics[width=1.2cm]{img/openBEA_logo.jpg}};
+	\end{tikzpicture}}
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{tikzpicture}[remember picture,overlay]
+		\node at (0.90\textwidth,-0.1) {\includegraphics[width=1.3cm]{img/eGon_logo.pdf}};
+	\end{tikzpicture}}
+	
+%%% footline
+\setbeamertemplate{footline}{
+	\begin{beamercolorbox}[wd=\textwidth, ht = 3mm, dp=2mm]{footego}
+		\hspace*{5mm} Workshop \glqq Neue Verbraucher und elektrische Flexibilitäten\grqq{} $\vert$ 30. September und 1. Oktober 2020 \hfill\insertframenumber\hspace*{5mm}
+	\end{beamercolorbox}
+	}
+
+%%% frame content 	
+\setbeamercolor{item}{fg=black}
+\setbeamertemplate{itemize items}[circle]
+
+\setbeamercolor{block title}{bg=lightegoblue, fg=black}
+\setbeamercolor{block body}{bg=paleegoblue, fg=black}
+
+
+%%% table of contents
+\setbeamertemplate{section in toc}[circle]
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{subsection in toc}{fg=black}
+\setbeamercolor{subsubsection in toc}{fg=black}
+
+
+%%% bibliography
+\setbeamertemplate{section in toc}[circle]
+\setbeamercolor{bibliography entry author}{fg=black}
+\setbeamercolor{bibliography entry title}{fg=black}
+\setbeamercolor{bibliography entry location}{fg=black}
+\setbeamertemplate{bibliography item}[text]
