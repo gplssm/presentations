@@ -53,7 +53,7 @@ Protokoll-Pad: [https://etherpad.wikimedia.org/p/open_BEA-eGon_Workshop_Session-
 \LARGE 
 [**www.menti.com**](https://menti.com)
 
-Code: 11 01 27 1
+Code: 97 24 54 7
 
 # Identifizierte Forschungsfragen
 
@@ -99,7 +99,7 @@ Die Fragen gliedern sich in 3 Gruppen
 \LARGE 
 [**www.menti.com**](https://menti.com)
 
-Code: 11 01 27 1
+Code: 97 24 54 7
 
 \normalsize
 (Folien 2-3)
@@ -164,8 +164,7 @@ Code: 11 01 27 1
 \LARGE 
 [**www.menti.com**](https://menti.com)
 
-Code: 11 01 27 1
+Code: 97 24 54 7
 
 \normalsize
 (Folie 4)
-
