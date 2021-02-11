@@ -44,5 +44,3 @@ pandoc -t beamer --pdf-engine=xelatex -o slides-draft.pdf slides-draft.md
 
 Note: If you use **pandoc version <2.0**, replace `--pdf-engine` by `--latex-engine=` to process the Markdown file.
 
-Have a look into `example_slides.md` for details and examples.
-
